@@ -16,7 +16,7 @@ router.post('/', function(req, res) {
     {
       origin: req.body.origin,
       destination: req.body.destination,
-      mode: 'walking',
+      mode: req.body.mode,
       units:'imperial'
     },
     function(err, data) {
